@@ -1,0 +1,110 @@
+{
+  "companyName": "温州汉高国际贸易有限公司",
+  "shortName": "汉高贸易",
+  "summary": "温州汉高国际贸易有限公司成立于2011年，是一家从事进出口代理及纺织品贸易的小微企业，主营再生棉纱线、针织/梭织色织面料等纺织品，下设苍南顺兴棉纺厂和苍南利都棉纺厂两家加工配套工厂。公司由陈汉望家族控制，以内贸+部分进出口为主要业务模式，服务于纺织品批发商和服装制造企业。",
+  "industry": "批发业",
+  "subIndustry": "纺织品贸易/进出口代理",
+  "scale": "小微企业（<50人）",
+  "mainBusiness": "进出口代理、纺织品及原料销售、棉花纱线加工",
+  "products": [
+    { "name": "再生棉纱线", "description": "再生棉涤棉纱，支数4-21支，用于针织和梭织面料生产" },
+    { "name": "针织色织条纹布", "description": "包括针织CVC色织条纹布、针织涤氨色织条纹布等" },
+    { "name": "梭织色织面料", "description": "梭织CVC色织格子布、梭织CVC色织起绒布等" },
+    { "name": "家居清洁用品", "description": "超细纤维拖把纱、水拖、尘推、拧水拖等清洁拖把用品" }
+  ],
+  "targetCustomers": ["纺织品批发商/经销商", "服装制造企业", "家纺产品生产商", "清洁用品制造商"],
+  "businessModel": "生产+贸易型（自建棉纺厂+贸易分销+进出口代理）",
+  "rating": "A级纳税人（2024）",
+  "tags": ["纺织品贸易", "再生棉纱", "进出口代理", "小微企业", "温州苍南", "纺织制造", "A级纳税人"],
+  "website": null,
+  "slogan": "顾客至上，锐意进取",
+  "isListed": false,
+  "stockCode": null,
+  "revenueScale": null,
+  "registration": {
+    "registeredName": "温州汉高国际贸易有限公司",
+    "registeredCapital": "100万人民币",
+    "paidCapital": "100万人民币",
+    "establishedDate": "2011-07-19",
+    "legalRepresentative": "陈汉望",
+    "businessStatus": "开业",
+    "shareholders": [
+      { "name": "陈汉望", "share": "95%", "type": "自然人" },
+      { "name": "陈先益", "share": "5%", "type": "自然人" }
+    ],
+    "branchCount": 0,
+    "interpretation": "注册资本100万实缴100万，资本充足；陈汉望家族绝对控股决策集中；曾用名、地址多次变更反映业务调整历史；1人参保反映典型小微规模。",
+    "organizationType": "有限责任公司（自然人投资或控股）",
+    "keyFindings": [
+      "注册资本100万实缴100万，资本金充足无注水",
+      "陈汉望持股95%实现绝对控股，决策链极短",
+      "1人参保确认小微规模，家族式经营特征明显"
+    ]
+  },
+  "organization": {
+    "type": "家族式小微企业",
+    "decisionChain": "极短——陈汉望一人担任法定代表人、执行董事兼总经理三重职务，决策高度集中",
+    "keyPersons": [
+      { "name": "陈汉望", "title": "法定代表人/执行董事兼总经理" },
+      { "name": "陈先益", "title": "监事" }
+    ],
+    "salesStrategy": "线下渠道为主，依托浙江纺织产业带优势；内外贸结合，以内销批发为主"
+  },
+  "timing": {
+    "phase": "平稳运营期",
+    "analysisBasis": [
+      "公司2011年成立至今存续14年，经营稳定但规模未突破小微天花板",
+      "无融资、无上市计划，无明显扩张信号",
+      "参保人数仅1人，规模维持在微型企业水平"
+    ],
+    "entryStrategy": "轻量级SaaS切入，以客户需求驱动采购效率提升为切入点",
+    "urgency": "中低——企业主有16家公司需要管理精力分配，数字化意愿需场景激发"
+  },
+  "hiring": {
+    "keySignals": []
+  },
+  "competition": {
+    "industryRank": null,
+    "marketShare": null,
+    "mainCompetitors": ["温州其他纺织品贸易公司", "苍南地区再生棉纱线生产商"],
+    "knownClients": []
+  },
+  "riskAndPolicy": {
+    "legal": {
+      "lawsuitCount": null,
+      "executedPerson": false,
+      "dishonestPerson": false,
+      "businessAnomalies": [],
+      "equityFreeze": false
+    },
+    "policy": {
+      "isSpecializedSME": false,
+      "smeLevel": "",
+      "isHighTech": false,
+      "digitalTransformation": false,
+      "esgGreen": false
+    }
+  },
+  "painPoints": [
+    { "area": "进销存管理", "description": "多产品线（纱线/面料/家居用品）混合经营，缺乏统一库存系统，仓库数据不同步，盘点效率低", "severity": "高" },
+    { "area": "客户管理", "description": "客户信息分散在销售个人手中，未实现客户资产化；进出口客户与内贸客户管理方式割裂", "severity": "中" },
+    { "area": "应收账款", "description": "贸易型企业账期管理混乱，缺乏系统化信用评估，坏账风险随客户增多而上升", "severity": "高" },
+    { "area": "价格管理", "description": "纺织品价格随原材料波动频繁，历史报价查询困难，新老客户报价标准不统一", "severity": "中" },
+    { "area": "多公司协同", "description": "陈汉望控制16家公司，跨公司采购/销售协同缺乏统一平台，财务核算复杂", "severity": "中" }
+  ],
+  "opportunities": [
+    { "area": "ERP/进销存系统", "description": "统一管理多产品线库存、打通工厂与贸易公司数据，实现采购-生产-销售一体化管控", "likelihood": "高" },
+    { "area": "CRM客户管理", "description": "将客户信息资产化，建立统一客户档案，跟踪进出口订单与内贸订单全流程", "likelihood": "中" },
+    { "area": "多公司集团化管理", "description": "针对陈汉望16家公司矩阵，提供集团型SaaS解决方案，统一财务核算与供应链协同", "likelihood": "中" }
+  ],
+  "analysisPath": "A",
+  "confidence": 0.65,
+  "metadata": {
+    "createdAt": "2026-05-08",
+    "updatedAt": "2026-05-08",
+    "createdBy": "AI",
+    "version": "1.0",
+    "sources": [],
+    "confidence": 0.65
+  }
+}
