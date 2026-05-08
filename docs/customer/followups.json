@@ -1,0 +1,15 @@
+{
+  "records": [
+    {
+      "id": 1,
+      "date": "2026-05-01",
+      "type": "拜访",
+      "content": "现场拜访陈汉望，客户明确CRM需求，预算100万左右，希望年底前上线，时间紧迫需尽快安排demo演示",
+      "attendees": ["陈汉望", "销售团队"],
+      "actions": [
+        { "action": "准备CRM demo演示", "owner": "售前", "assignee": "", "deadline": "2026-05-10", "done": false, "completedAt": null },
+        { "action": "安排下次方案演示会议", "owner": "销售", "assignee": "", "deadline": "2026-05-12", "done": false, "completedAt": null }
+      ]
+    }
+  ]
+}

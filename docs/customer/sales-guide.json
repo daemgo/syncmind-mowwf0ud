@@ -1,14 +1,14 @@
 {
   "salesGuide": {
     "timing": {
-      "timingStage": "需求明确期",
-      "entryStrategy": "以CRM为切入点，强调客户资产化和账期管控两大核心价值，用小微企业的快速见效案例打动老板",
-      "urgency": "中"
+      "timingStage": "选型决策期",
+      "entryStrategy": "客户已明确需求和时间，必须尽快安排demo演示，抢在竞争对手前面",
+      "urgency": "高"
     },
     "stageAdvice": {
-      "focus": "尽快安排方案演示，用实际产品体验打动老板",
-      "approach": "老板一人决策，不需要复杂审批，直接约一把手演示效率最高",
-      "risks": "老板可能同时在忙16家公司的事，需要持续跟进保持热度"
+      "focus": "本周内安排demo演示，用实际产品体验锁定客户",
+      "approach": "老板决策快，demo质量直接决定成败；准备好 demo 数据和演示脚本",
+      "risks": "时间压力大，demo准备仓促可能影响效果"
     },
     "competitors": [
       {
@@ -50,20 +50,6 @@
     "interviewGuide": {
       "fromRequirements": [
         {
-          "questionId": "PQ-001",
-          "stage": "screening",
-          "question": "您对这套CRM系统的预算大概是多少？",
-          "priority": "必问",
-          "status": "pending"
-        },
-        {
-          "questionId": "PQ-002",
-          "stage": "screening",
-          "question": "您希望系统什么时候能上线使用？",
-          "priority": "必问",
-          "status": "pending"
-        },
-        {
           "questionId": "PQ-003",
           "stage": "deep-dive",
           "question": "目前有多少客户信息需要导入系统？是以什么形式存储的？",
@@ -87,20 +73,20 @@
       ]
     },
     "tracking": {
-      "coverageRate": 0,
-      "coveredCount": 0,
+      "coverageRate": 40,
+      "coveredCount": 2,
       "totalCount": 5,
-      "pendingCritical": ["PQ-001", "PQ-002"]
+      "pendingCritical": []
     },
     "nextActions": [
-      { "action": "约见陈汉望，进行CRM方案演示", "deadline": "2026-05-15", "owner": "销售" },
-      { "action": "准备小微企业CRM成功案例（纺织/贸易行业优先）", "deadline": "2026-05-12", "owner": "售前" },
-      { "action": "确认客户现有客户数据量和存储方式", "deadline": "首次拜访时", "owner": "销售" }
+      { "action": "准备CRM demo演示环境（本周内完成）", "deadline": "2026-05-10", "owner": "售前" },
+      { "action": "安排demo演示会议，约见陈汉望", "deadline": "2026-05-12", "owner": "销售" },
+      { "action": "准备demo演示脚本（客户档案、销售跟进、应收提醒功能）", "deadline": "2026-05-10", "owner": "售前" }
     ],
     "metadata": {
       "generatedAt": "2026-05-08T00:00:00Z",
       "updatedAt": "2026-05-08T00:00:00Z",
-      "version": "1.0"
+      "version": "1.1"
     }
   }
 }

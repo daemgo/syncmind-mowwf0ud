@@ -1,5 +1,5 @@
 {
-  "currentVersion": "v0.1",
+  "currentVersion": "v0.2",
   "status": "draft",
   "versions": [],
   "current": {
@@ -8,12 +8,12 @@
       "lastUpdated": "2026-05-08",
       "overallAssessment": {
         "customerIntent": "客户明确提出需要CRM管理系统，用于客户关系管理和销售过程规范",
-        "projectUrgency": "中低——企业主有16家公司需管理，数字化意愿需场景激发",
-        "budgetSituation": "未知",
+        "projectUrgency": "高——客户要求年底前上线，时间紧迫",
+        "budgetSituation": "100万左右，预算明确且充足",
         "competitionStatus": "未知",
-        "winProbability": "待评估",
-        "keyObstacles": ["小微企业预算有限", "员工数字化基础薄弱"],
-        "confidenceLevel": "medium"
+        "winProbability": "高——预算充足、时间明确、决策人单一",
+        "keyObstacles": ["时间紧，需尽快安排demo", "首期只上CRM，进度压力大"],
+        "confidenceLevel": "high"
       },
       "keyPersons": [
         { "name": "陈汉望", "title": "法定代表人/执行董事兼总经理（决策人）" }
@@ -33,7 +33,9 @@
       "suggestions": []
     },
     "sources": {
-      "meetings": [],
+      "meetings": [
+        { "date": "2026-05-01", "type": "现场拜访", "summary": "现场拜访陈汉望，明确CRM需求，预算100万，年底前上线", "attendees": ["陈汉望"] }
+      ],
       "documents": [],
       "communications": [
         { "date": "2026-05-08", "type": "客户沟通", "content": "客户需求是需要一个CRM的管理系统" }
@@ -53,7 +55,7 @@
         "module": "CRM核心",
         "relatedPainPoints": ["客户管理"],
         "firstVersion": "v0.1",
-        "lastUpdated": "v0.1",
+        "lastUpdated": "v0.2",
         "history": []
       },
       {
@@ -68,7 +70,7 @@
         "module": "CRM-客户管理",
         "relatedPainPoints": ["客户管理"],
         "firstVersion": "v0.1",
-        "lastUpdated": "v0.1",
+        "lastUpdated": "v0.2",
         "history": []
       },
       {
@@ -83,7 +85,7 @@
         "module": "CRM-销售管理",
         "relatedPainPoints": ["客户管理"],
         "firstVersion": "v0.1",
-        "lastUpdated": "v0.1",
+        "lastUpdated": "v0.2",
         "history": []
       },
       {
@@ -98,7 +100,7 @@
         "module": "CRM-应收管理",
         "relatedPainPoints": ["应收账款"],
         "firstVersion": "v0.1",
-        "lastUpdated": "v0.1",
+        "lastUpdated": "v0.2",
         "history": []
       },
       {
@@ -113,7 +115,7 @@
         "module": "CRM-报价管理",
         "relatedPainPoints": ["价格管理"],
         "firstVersion": "v0.1",
-        "lastUpdated": "v0.1",
+        "lastUpdated": "v0.2",
         "history": []
       },
       {
@@ -128,7 +130,7 @@
         "module": "CRM-集团管理",
         "relatedPainPoints": ["多公司协同"],
         "firstVersion": "v0.1",
-        "lastUpdated": "v0.1",
+        "lastUpdated": "v0.2",
         "history": []
       },
       {
@@ -143,7 +145,7 @@
         "module": "技术架构",
         "relatedPainPoints": [],
         "firstVersion": "v0.1",
-        "lastUpdated": "v0.1",
+        "lastUpdated": "v0.2",
         "history": []
       },
       {
@@ -158,7 +160,7 @@
         "module": "技术架构",
         "relatedPainPoints": [],
         "firstVersion": "v0.1",
-        "lastUpdated": "v0.1",
+        "lastUpdated": "v0.2",
         "history": []
       }
     ],
@@ -171,14 +173,14 @@
       "outOfScope": ["进销存系统", "生产管理系统", "ERP集成"],
       "futureScope": ["多公司集团管理", "与ERP系统集成", "BI数据分析"],
       "phases": [
-        { "phase": "1期", "scope": "客户档案+销售跟进+基础应收", "timeline": "1-2个月" },
+        { "phase": "1期", "scope": "客户档案+销售跟进+基础应收", "timeline": "7-8个月（2026年底前上线）" },
         { "phase": "2期", "scope": "多公司管理+高级功能", "timeline": "待定" }
       ],
       "priorityMatrix": []
     },
     "constraints": {
-      "budget": { "total": "", "flexibility": "未知" },
-      "timeline": { "expectedStart": "", "expectedGoLive": "" }
+      "budget": { "total": "100万", "flexibility": "固定" },
+      "timeline": { "expectedStart": "2026-05", "expectedGoLive": "2026-12" }
     },
     "successCriteria": {
       "operational": ["客户信息集中管理率100%", "销售过程可视化覆盖80%订单"],
@@ -188,8 +190,8 @@
       "overallApproach": "以CRM为核心，先满足客户管理和销售跟进基础需求，再逐步扩展应收管理和多公司功能",
       "recommendedApproach": null,
       "technicalDirection": "SaaS部署，优先选择成熟CRM产品，注重易用性和实施速度",
-      "implementationStrategy": null,
-      "nextSteps": ["安排方案演示", "确认核心功能优先级", "商务报价"]
+      "implementationStrategy": "时间紧，建议采用敏捷迭代模式，快速交付MVP版本",
+      "nextSteps": ["安排CRM demo演示（本周内）", "确认核心功能优先级", "商务报价"]
     },
     "pendingQuestions": [
       {
@@ -202,9 +204,9 @@
         "expectedDirection": "小微企业对价格敏感，可能在5-20万区间",
         "targetPerson": "陈汉望",
         "relatedNeedIds": ["REQ-001"],
-        "status": "pending",
-        "answer": null,
-        "resolvedInVersion": null
+        "status": "answered",
+        "answer": "100万左右",
+        "resolvedInVersion": "v0.2"
       },
       {
         "id": "PQ-002",
@@ -216,9 +218,9 @@
         "expectedDirection": "小微企业希望快速见效，可能期望1-2个月内",
         "targetPerson": "陈汉望",
         "relatedNeedIds": ["REQ-001"],
-        "status": "pending",
-        "answer": null,
-        "resolvedInVersion": null
+        "status": "answered",
+        "answer": "希望年底之前上线第一个版本",
+        "resolvedInVersion": "v0.2"
       },
       {
         "id": "PQ-003",
@@ -265,18 +267,18 @@
     ],
     "risksAndAssumptions": {
       "risks": [
-        { "description": "历史客户数据分散，质量参差不齐，迁移工作量大", "impact": "中", "mitigation": "提前进行数据盘点，制定清洗规则" },
-        { "description": "小微企业员工数字化基础弱，系统 adoption 率可能偏低", "impact": "中", "mitigation": "选择易用产品，加强培训" }
+        { "description": "时间紧（7-8个月交付），需快速启动实施团队", "impact": "高", "mitigation": "尽快锁定合同，启动实施计划" },
+        { "description": "历史客户数据分散，质量参差不齐，迁移工作量大", "impact": "中", "mitigation": "提前进行数据盘点，制定清洗规则" }
       ],
       "assumptions": [
-        { "description": "客户有足够预算投入CRM系统", "impact": "中" },
-        { "description": "老板能主导推动系统落地使用", "impact": "高" }
+        { "description": "客户能快速确认需求，配合实施", "impact": "高" },
+        { "description": "100万预算能覆盖CRM实施及首年服务", "impact": "中" }
       ],
       "dependencies": []
     },
     "completionRate": {
-      "overall": 35,
-      "byCategory": { "business": 0, "functional": 40, "technical": 25 },
+      "overall": 55,
+      "byCategory": { "business": 0, "functional": 60, "technical": 40 },
       "blockers": []
     }
   }
