@@ -1,0 +1,27 @@
+specHash: "mode-b-solution-2026-05-08"
+generatedAt: "2026-05-08T00:00:00.000Z"
+sourceMode: "solution"
+modules:
+  - moduleId: customers
+    moduleName: 客户管理
+    locked: false
+    files:
+      - src/routes/customers/index.tsx
+      - src/routes/customers/$id.tsx
+  - moduleId: opportunities
+    moduleName: 商机管理
+    locked: false
+    files:
+      - src/routes/opportunities/index.tsx
+      - src/routes/opportunities/$id.tsx
+  - moduleId: contracts
+    moduleName: 合同管理
+    locked: false
+    files:
+      - src/routes/contracts/index.tsx
+      - src/routes/contracts/$id.tsx
+  - moduleId: dashboard
+    moduleName: 仪表盘
+    locked: false
+    files:
+      - src/routes/index.tsx

@@ -1,16 +1,30 @@
-import { createRootRoute, HeadContent, Outlet, Scripts } from "@tanstack/react-router";
-import "@/styles/globals.css";
+import { createRootRoute, HeadContent, Outlet, Scripts } from "@tanstack/react-router"
+import { AppShell } from "@/components/layout/app-shell"
+import type { MenuItem } from "@/components/layout/sidebar"
+import {
+  LayoutDashboard,
+  Users,
+  TrendingUp,
+  FileText,
+  Settings,
+} from "lucide-react"
+import "@/styles/globals.css"
+
+// Menu configuration for CRM system
+const menuItems: MenuItem[] = [
+  { label: "仪表盘", href: "/", icon: LayoutDashboard },
+  { label: "客户管理", href: "/customers", icon: Users },
+  { label: "商机管理", href: "/opportunities", icon: TrendingUp },
+  { label: "合同管理", href: "/contracts", icon: FileText },
+]
 
 export const Route = createRootRoute({
   head: () => ({
     meta: [
       { charSet: "utf-8" },
-      {
-        name: "viewport",
-        content: "width=device-width, initial-scale=1",
-      },
-      { title: "syncMind Skills" },
-      { name: "description", content: "syncMind Skills Platform" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { title: "汉高贸易 CRM" },
+      { name: "description", content: "温州汉高国际贸易 CRM 管理系统" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -26,21 +40,23 @@ export const Route = createRootRoute({
     ],
   }),
   component: RootComponent,
-});
+})
 
 function RootComponent() {
   return (
-    <html lang="en">
+    <html lang="zh-CN">
       <head>
         <HeadContent />
       </head>
       <body className="antialiased" style={{ fontFamily: "'Inter', 'Noto Sans SC', system-ui, sans-serif" }}>
-        <Outlet />
+        <AppShell title="汉高贸易 CRM" items={menuItems}>
+          <Outlet />
+        </AppShell>
         <Scripts />
         <NavBridgeScript />
       </body>
     </html>
-  );
+  )
 }
 
 function NavBridgeScript() {
@@ -80,5 +96,5 @@ function NavBridgeScript() {
 })();`,
       }}
     />
-  );
+  )
 }
