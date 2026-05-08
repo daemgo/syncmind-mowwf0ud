@@ -1,0 +1,283 @@
+{
+  "currentVersion": "v0.1",
+  "status": "draft",
+  "versions": [],
+  "current": {
+    "salesInput": {
+      "salesPerson": "",
+      "lastUpdated": "2026-05-08",
+      "overallAssessment": {
+        "customerIntent": "客户明确提出需要CRM管理系统，用于客户关系管理和销售过程规范",
+        "projectUrgency": "中低——企业主有16家公司需管理，数字化意愿需场景激发",
+        "budgetSituation": "未知",
+        "competitionStatus": "未知",
+        "winProbability": "待评估",
+        "keyObstacles": ["小微企业预算有限", "员工数字化基础薄弱"],
+        "confidenceLevel": "medium"
+      },
+      "keyPersons": [
+        { "name": "陈汉望", "title": "法定代表人/执行董事兼总经理（决策人）" }
+      ],
+      "realNeeds": {
+        "explicitNeeds": ["CRM管理系统"],
+        "implicitNeeds": ["客户资产化", "销售过程可视化", "应收账款管控"],
+        "suspectedNeeds": ["多公司客户共享", "报价历史管理"]
+      },
+      "decisionFactors": {
+        "primaryFactor": "老板直接决策，无复杂审批流程",
+        "secondaryFactors": ["产品易用性", "价格", "实施周期"],
+        "dealBreakers": []
+      },
+      "notes": "客户明确表达CRM需求，应作为核心切入点",
+      "concerns": [],
+      "suggestions": []
+    },
+    "sources": {
+      "meetings": [],
+      "documents": [],
+      "communications": [
+        { "date": "2026-05-08", "type": "客户沟通", "content": "客户需求是需要一个CRM的管理系统" }
+      ],
+      "observations": []
+    },
+    "needs": [
+      {
+        "id": "REQ-001",
+        "category": "functional",
+        "title": "CRM管理系统",
+        "description": "建立统一的客户关系管理平台，实现客户信息集中管理、销售流程规范、应收账款可控",
+        "priority": "must",
+        "confidence": "high",
+        "source": { "type": "customer-stated", "detail": "客户明确表达需要CRM管理系统", "raw": "客户的需求是需要一个CRM的管理系统" },
+        "status": "active",
+        "module": "CRM核心",
+        "relatedPainPoints": ["客户管理"],
+        "firstVersion": "v0.1",
+        "lastUpdated": "v0.1",
+        "history": []
+      },
+      {
+        "id": "REQ-002",
+        "category": "functional",
+        "title": "客户档案管理",
+        "description": "建立统一的客户主数据，支持客户分类（纺织品批发商/服装制造企业/家纺生产商等）、联系方式、交易历史、跟进记录集中管理",
+        "priority": "must",
+        "confidence": "high",
+        "source": { "type": "customer-stated", "detail": "CRM核心功能+客户画像推演", "raw": null },
+        "status": "active",
+        "module": "CRM-客户管理",
+        "relatedPainPoints": ["客户管理"],
+        "firstVersion": "v0.1",
+        "lastUpdated": "v0.1",
+        "history": []
+      },
+      {
+        "id": "REQ-003",
+        "category": "functional",
+        "title": "销售跟进管理",
+        "description": "支持内贸订单和进出口订单的跟单流程管理，包括商机-报价-订单-交付-回款全链路跟踪",
+        "priority": "should",
+        "confidence": "medium",
+        "source": { "type": "profile-inference", "detail": "客户主业为进出口代理+内贸，需覆盖两种订单模式", "raw": null },
+        "status": "active",
+        "module": "CRM-销售管理",
+        "relatedPainPoints": ["客户管理"],
+        "firstVersion": "v0.1",
+        "lastUpdated": "v0.1",
+        "history": []
+      },
+      {
+        "id": "REQ-004",
+        "category": "functional",
+        "title": "应收账款管理",
+        "description": "账期设置、信用额度管理、到期提醒、逾期预警功能",
+        "priority": "must",
+        "confidence": "high",
+        "source": { "type": "profile-inference", "detail": "档案痛点标注账期管理混乱，痛点高", "raw": null },
+        "status": "active",
+        "module": "CRM-应收管理",
+        "relatedPainPoints": ["应收账款"],
+        "firstVersion": "v0.1",
+        "lastUpdated": "v0.1",
+        "history": []
+      },
+      {
+        "id": "REQ-005",
+        "category": "functional",
+        "title": "报价历史管理",
+        "description": "每次报价自动存档，支持按客户/产品/时间快速查询历史报价",
+        "priority": "should",
+        "confidence": "medium",
+        "source": { "type": "profile-inference", "detail": "档案痛点标注历史报价查询困难", "raw": null },
+        "status": "active",
+        "module": "CRM-报价管理",
+        "relatedPainPoints": ["价格管理"],
+        "firstVersion": "v0.1",
+        "lastUpdated": "v0.1",
+        "history": []
+      },
+      {
+        "id": "REQ-006",
+        "category": "functional",
+        "title": "多公司客户共享",
+        "description": "支持16家公司共享客户档案，避免同一客户重复建档和信息不一致",
+        "priority": "could",
+        "confidence": "medium",
+        "source": { "type": "profile-inference", "detail": "老板控制16家公司，跨公司协同缺乏平台", "raw": null },
+        "status": "active",
+        "module": "CRM-集团管理",
+        "relatedPainPoints": ["多公司协同"],
+        "firstVersion": "v0.1",
+        "lastUpdated": "v0.1",
+        "history": []
+      },
+      {
+        "id": "REQ-007",
+        "category": "technical",
+        "title": "云端SaaS部署",
+        "description": "支持云端SaaS部署，开通即用，满足小微企业快速上线需求",
+        "priority": "should",
+        "confidence": "medium",
+        "source": { "type": "profile-inference", "detail": "小微企业IT人员匮乏，参保仅1人", "raw": null },
+        "status": "active",
+        "module": "技术架构",
+        "relatedPainPoints": [],
+        "firstVersion": "v0.1",
+        "lastUpdated": "v0.1",
+        "history": []
+      },
+      {
+        "id": "REQ-008",
+        "category": "technical",
+        "title": "移动端支持",
+        "description": "支持移动端访问（手机/平板），便于外出时查看客户和跟进记录",
+        "priority": "could",
+        "confidence": "medium",
+        "source": { "type": "industry-pattern", "detail": "纺织贸易销售人员需经常拜访客户", "raw": null },
+        "status": "active",
+        "module": "技术架构",
+        "relatedPainPoints": [],
+        "firstVersion": "v0.1",
+        "lastUpdated": "v0.1",
+        "history": []
+      }
+    ],
+    "users": [
+      { "role": "老板/决策人", "description": "陈汉望，1人", "mainTasks": ["查看客户整体情况", "审批重要订单", "财务管控"] },
+      { "role": "销售人员", "description": "核心销售，1-3人", "mainTasks": ["客户跟进", "报价", "订单录入"] }
+    ],
+    "scope": {
+      "inScope": ["客户档案管理", "销售跟进管理", "应收账款管理", "报价历史管理"],
+      "outOfScope": ["进销存系统", "生产管理系统", "ERP集成"],
+      "futureScope": ["多公司集团管理", "与ERP系统集成", "BI数据分析"],
+      "phases": [
+        { "phase": "1期", "scope": "客户档案+销售跟进+基础应收", "timeline": "1-2个月" },
+        { "phase": "2期", "scope": "多公司管理+高级功能", "timeline": "待定" }
+      ],
+      "priorityMatrix": []
+    },
+    "constraints": {
+      "budget": { "total": "", "flexibility": "未知" },
+      "timeline": { "expectedStart": "", "expectedGoLive": "" }
+    },
+    "successCriteria": {
+      "operational": ["客户信息集中管理率100%", "销售过程可视化覆盖80%订单"],
+      "business": ["应收账款逾期率降低", "报价效率提升"]
+    },
+    "solutionDirection": {
+      "overallApproach": "以CRM为核心，先满足客户管理和销售跟进基础需求，再逐步扩展应收管理和多公司功能",
+      "recommendedApproach": null,
+      "technicalDirection": "SaaS部署，优先选择成熟CRM产品，注重易用性和实施速度",
+      "implementationStrategy": null,
+      "nextSteps": ["安排方案演示", "确认核心功能优先级", "商务报价"]
+    },
+    "pendingQuestions": [
+      {
+        "id": "PQ-001",
+        "category": "预算",
+        "priority": "必问",
+        "stage": "screening",
+        "question": "您对这套CRM系统的预算大概是多少？",
+        "purpose": "评估项目可行性，制定合适的产品方案",
+        "expectedDirection": "小微企业对价格敏感，可能在5-20万区间",
+        "targetPerson": "陈汉望",
+        "relatedNeedIds": ["REQ-001"],
+        "status": "pending",
+        "answer": null,
+        "resolvedInVersion": null
+      },
+      {
+        "id": "PQ-002",
+        "category": "时间",
+        "priority": "必问",
+        "stage": "screening",
+        "question": "您希望系统什么时候能上线使用？",
+        "purpose": "制定实施计划",
+        "expectedDirection": "小微企业希望快速见效，可能期望1-2个月内",
+        "targetPerson": "陈汉望",
+        "relatedNeedIds": ["REQ-001"],
+        "status": "pending",
+        "answer": null,
+        "resolvedInVersion": null
+      },
+      {
+        "id": "PQ-003",
+        "category": "业务",
+        "priority": "选问",
+        "stage": "deep-dive",
+        "question": "目前有多少客户信息需要导入系统？是以什么形式存储的？",
+        "purpose": "评估数据迁移工作量",
+        "expectedDirection": "可能分散在Excel或销售人员个人手中",
+        "targetPerson": "陈汉望",
+        "relatedNeedIds": ["REQ-002"],
+        "status": "pending",
+        "answer": null,
+        "resolvedInVersion": null
+      },
+      {
+        "id": "PQ-004",
+        "category": "业务",
+        "priority": "选问",
+        "stage": "deep-dive",
+        "question": "目前销售跟单是怎么管理的？有没有正在使用的系统？",
+        "purpose": "了解现有流程，评估CRM价值",
+        "expectedDirection": "可能依赖微信/电话/Excel",
+        "targetPerson": "陈汉望",
+        "relatedNeedIds": ["REQ-003"],
+        "status": "pending",
+        "answer": null,
+        "resolvedInVersion": null
+      },
+      {
+        "id": "PQ-005",
+        "category": "业务",
+        "priority": "选问",
+        "stage": "closing",
+        "question": "除了CRM，您还有其他想一起解决的管理问题吗？比如进销存或财务？",
+        "purpose": "挖掘追加销售机会，了解整体需求",
+        "expectedDirection": "可能对进销存也有需求",
+        "targetPerson": "陈汉望",
+        "relatedNeedIds": ["REQ-006"],
+        "status": "pending",
+        "answer": null,
+        "resolvedInVersion": null
+      }
+    ],
+    "risksAndAssumptions": {
+      "risks": [
+        { "description": "历史客户数据分散，质量参差不齐，迁移工作量大", "impact": "中", "mitigation": "提前进行数据盘点，制定清洗规则" },
+        { "description": "小微企业员工数字化基础弱，系统 adoption 率可能偏低", "impact": "中", "mitigation": "选择易用产品，加强培训" }
+      ],
+      "assumptions": [
+        { "description": "客户有足够预算投入CRM系统", "impact": "中" },
+        { "description": "老板能主导推动系统落地使用", "impact": "高" }
+      ],
+      "dependencies": []
+    },
+    "completionRate": {
+      "overall": 35,
+      "byCategory": { "business": 0, "functional": 40, "technical": 25 },
+      "blockers": []
+    }
+  }
+}
